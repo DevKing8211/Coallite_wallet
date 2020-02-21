@@ -1,0 +1,55 @@
+<ion-header no-border>
+	<ion-toolbar>
+		<ion-buttons left>
+          <button ion-button clear icon-only (click)="closeModalNoLogin()">
+              <ion-icon name="arrow-round-back"></ion-icon>
+          </button>
+      </ion-buttons>
+      <ion-title>{{ 'LOGIN' | translate }}</ion-title>
+<!--       <ion-buttons end>
+	      <button ion-button secondary (click)="showInfo()">
+	        <ion-icon name="information-circle"></ion-icon>
+	      </button>
+	    </ion-buttons> -->
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding [class]="theme">
+	<form>
+		<ion-list>
+			<ion-item>
+				<ion-input [(ngModel)]="accountID" name="account" type="text" (ngModelChange)="accountID=$event.toLocaleUpperCase()" required placeholder="{{ 'ACCOUNT_NUMBER_ALIAS' | translate }}"></ion-input>
+				<button id="qrIcon" ion-button clear color="dark" type="button" item-right (click)="openBarcodeScanner()"> <ion-icon name="barcode"> </ion-icon> </button>
+			</ion-item>
+<!-- 			<ion-item id="nodeSelect">
+				<ion-label item-start stacked color="primary">{{ 'NODE' | translate }}</ion-label>
+				<ion-select item-start name="nodeSelect" id="nodeSelect" okText="{{ 'OK' | translate }}" cancelText="{{ 'CANCEL' | translate }}" [(ngModel)]="nodeSelect" (ionChange)='changeNode()'>
+					<ion-option value="mainnet/">{{ 'MAINNET' | translate }}</ion-option>
+					<ion-option value="testnet/">{{ 'TESTNET' | translate }}</ion-option>
+					<ion-option value="">{{ 'CUSTOM' | translate }}</ion-option>
+				</ion-select>
+			</ion-item>			
+			<ion-item [class.hide]="hideCustom">
+				<ion-input [(ngModel)]="node" name="node" type="text" placeholder="URL:PORT of the custom node">
+				</ion-input>
+			</ion-item> -->
+			<ion-item>
+			    <ion-label>{{ 'SAVE_ACCOUNT' | translate }}</ion-label>
+			    <ion-checkbox [(ngModel)]="savePassphrase" name="savePassphrase"></ion-checkbox>
+			</ion-item>
+		</ion-list>
+		<ion-row *ngIf="error" responsive-sm>
+	      <ion-col class="failedBox">
+	        {{error}}
+	      </ion-col>
+	    </ion-row>
+
+		<ion-row responsive-sm>
+			<ion-col>
+				<button ion-button color="white" (click)="closeModal()" type="submit" block>{{ 'LOGIN' | translate }}</button>
+			</ion-col>
+		</ion-row>
+	</form>
+</ion-content>

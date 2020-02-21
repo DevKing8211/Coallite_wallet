@@ -1,0 +1,37 @@
+page-about {
+	.header button {
+        font-size: 1.5em;
+    }
+
+    .scroll-content {
+        background: #F99D1C;
+        background: -moz-linear-gradient(180deg, #F99D1C 0%, #F99D1C 100%);
+        background: -webkit-linear-gradient(180deg, #F99D1C 0%,#F99D1C 100%);
+        background: linear-gradient(180deg, #F99D1C 0%,#F99D1C 100%);
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+    }
+
+    .scroll-content p {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.75);
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+    }
+
+    #donateButton {
+        background-color: #fff;
+        color: #1162a1;
+    }
+
+    a {
+        color: white;
+    }
+}

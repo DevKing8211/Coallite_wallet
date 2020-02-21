@@ -1,0 +1,175 @@
+page-home {
+    > .content.content-md > .scroll-content, > .content.content-ios > .scroll-content {
+        padding: 0 5px;
+        background: #F99D1C;
+        // background: -moz-linear-gradient(180deg, #F99D1C 0%, #3a86c7 100%);
+        // background: -webkit-linear-gradient(180deg, #F99D1C 0%,#3a86c7 100%);
+        // background: linear-gradient(180deg, #F99D1C 0%,#3a86c7 100%);
+    }
+
+    #homeHeader .bar-buttons-md, #homeHeader .bar-buttons-ios {
+        min-width: 25px;
+    }
+
+	#homeTop .col {
+		padding: 1em;
+	    text-align: center;
+	}
+
+    .toolbar-title-md, .toolbar-title-ios {
+        padding: 0 12px 0 5px;
+    }
+
+    #homeTop {
+        text-align: center;
+        margin: 0 auto 30px;
+        padding: 0em;
+        background-color: #fff;
+        border-radius: 10px;
+        width: 90%;
+        box-shadow: 0px 0px 5px #555;
+    }
+
+    #balance {
+        text-align: left;
+        margin-bottom: 2px;
+    }
+
+    sub {
+        bottom: 0;
+    }
+
+    #currancySelect {
+        float: right;
+    }
+
+    #chainLogo {
+        position: relative;
+        top: 4px;
+    }
+
+    #chainSelect {
+        display: inline-flex;
+        padding: 5px 5px 0px;
+    }
+
+    #homeGrid {
+        padding: 0;
+    }
+
+	#homeHeader button {
+        font-size: 1.5em;
+    }
+
+    h4 {
+    	margin: 0;
+        font-size: 2.15em;
+    }
+
+    h6 {
+    	margin: 0;
+        font-size: 1.4em;
+    }
+
+    .lighterText {
+        opacity: 0.8;
+    }
+
+    .smallerText {
+        font-size: 60%;
+        top: -10px;
+        position: relative;
+    }
+
+    #tabMenu {
+        text-align: center;
+        font-size: 1.75em;
+        color: rgba(0, 0, 0, 0.51);
+        margin: -26px auto 2px auto;
+        padding: 0;
+        z-index: 1000;
+        background-color: #fff;
+        border-radius: 10px;
+        width: 90%;
+        box-shadow: 0px 0px 5px #555;
+    }
+
+    #tabMenu .activeTab {
+        color: #000;
+        // border-bottom: 2px solid #1162a1;
+        border-bottom: 2px solid #000;
+    }
+    #tabMenu .activeTab:first-child {
+        border-radius: 0 0 0 10px;
+    }
+    #tabMenu .activeTab:last-child {
+        border-radius: 0 0 10px 0;
+    }
+    #tabMenu .col {
+        padding: 5px 5px 0 5px;
+    }
+
+    .select-md, .select-ios {
+    	padding: 0 8px;
+	    display: inline-flex;
+	}
+
+	.success {
+        color: #32db64;
+    }
+
+    .danger {
+        color: #f53d3d;
+    }
+
+    .change24 {
+        font-size: 80%;
+    }
+
+    .feeTxt {
+   		font-size: 80%;
+    	opacity: 0.7;
+    }
+
+    .ngx-pagination {
+    	text-align: center;
+    }
+
+    .ngx-pagination .current {
+    	background: #1162a1;
+    }
+
+    #txTable .row {
+    	border-bottom: 1px solid #eee;
+    	padding: 5px 0;
+    }
+
+	@media(max-width: 575px){
+        // #homeHeader .toolbar-title-md{
+        //     font-size: 1em;
+        // }
+
+        ion-app.md {
+        	font-size: 1.2rem;
+        }
+
+        .hidden-xs {
+            display:none;
+        }
+
+        .no-top-bottom-padding {
+            padding: 0 5px;
+        }
+        
+    }
+    @media(min-width: 576px){
+        .show-xs {
+            display:none;
+        }
+    }
+
+    #navContainer {
+        top: 15.4em;
+        height: calc(100% - 15.4em);
+    }
+}

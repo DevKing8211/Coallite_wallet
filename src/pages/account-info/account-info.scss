@@ -1,0 +1,30 @@
+page-account-info {
+		#qrIcon, #fingerIcon, #contactsIcon, #eyeIcon {
+    	font-size: 1.5em;
+      margin: 0;
+      padding: 0 0.4em;
+      height: 100%;
+      color: #777;
+      top: 13px;
+    	position: relative;
+    }
+
+    .item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+        border-bottom-color: #dedede !important;
+        box-shadow: none !important;
+    }
+
+    .bigButton {
+      width: 100%;
+      background: #1162a1;
+      background: -moz-linear-gradient(180deg, #1162a1 0%, #3a86c7 100%);
+      background: -webkit-linear-gradient(180deg, #1162a1 0%,#3a86c7 100%);
+      background: linear-gradient(180deg, #1162a1 0%,#3a86c7 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1162a1', endColorstr='#3a86c7',GradientType=1 );
+      color: #fff;
+    }
+
+    .item-md.item-block .item-inner {
+      border: 0;
+    }
+}

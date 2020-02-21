@@ -1,0 +1,54 @@
+page-receive-tab {
+	.qrcode img {
+		width: 60%;
+		margin: -4% -4% -2% -4%;
+		max-height: 50%;
+		margin-bottom: 10px;
+	}
+
+	.grid {
+		border-radius: 10px;
+		background-color: #fff;
+		width: 90%;
+		margin: 5px auto;
+	}
+
+	#qrCode {
+		text-align: center;
+	}
+
+	.noBottomMargin {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+	.littleMargin {
+		margin-top: 5px;
+	}
+
+	p {
+		text-align: center;
+		color: #555;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+	h6 {
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+	.idIcon {
+    padding: 8px;
+  }
+
+	.content-md .scroll-content, .content-ios .scroll-content {
+    padding-top: 0 !important;
+  }
+
+	.row, .col {
+	  border-bottom: 0 !important;
+	  padding-bottom: 0 !important;
+	  text-align: center;
+	}
+
+}

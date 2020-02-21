@@ -1,0 +1,42 @@
+page-transactions-tab {
+	.content-md .scroll-content, .content-ios .scroll-content {
+		padding-top: 0 !important;
+	}
+
+	h5 {
+		text-align: center;
+	}
+
+	.unconfirmed {
+		font-style: italic;
+	}
+
+	ion-icon {
+		padding: 0 2px;
+		font-size: 20px;
+	}
+
+	.cardLeft {
+		float: left;
+	}
+	.cardRight {
+		float: right;
+		position: absolute;
+		right: 10px;
+		text-align: right;
+	}
+	.cardRight > span {
+		font-weight: bold;
+	}
+	.cardRight .feeTxt {
+		text-align: right;
+		float: right;
+		color: #bbb;
+		font-weight: normal;
+	}
+
+	.item-md, .item-ios {
+		margin: 10px auto;
+		font-size: 1.3rem;
+	}
+}
